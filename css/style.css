@@ -242,5 +242,11 @@ header nav {
 .cta {
     /* debug */
     min-height: 600px;
+}
 
+/* FOOTER */
+footer {
+    background-color: #333333;
+    /* debug */
+    min-height: 400px;
 }
