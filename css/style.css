@@ -1,6 +1,8 @@
 /* ROOT */
 :root {
     --primary-blue-color: #0084FD;
+    --violet-bg-color: #9792E4;
+    --white-bg-color: white;
 }
 
 /* RESET */
@@ -20,10 +22,74 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+.flex {
+    display: flex;
+}
+
 a {
     color: inherit;
     text-decoration: inherit;
     text-align: inherit;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1100px;
+    /* debug */
+    border: 1px solid red;
+  }
+
+.large-container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1160px;
+    /* debug */
+    border: 1px solid red;
+  }
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.m-lr-2 {
+    margin: 0 2rem;
+}
+
+.pt-2 {
+    padding-top: 2rem;
+}
+
+.pb-2 {
+    padding-bottom: 2rem;
+}
+
+.pb-4 {
+    padding-bottom: 4rem;
+}
+
+.white-bg {
+    background-color: var(--white-bg-color);
+}
+
+.violet-bg {
+    background-color: var(--violet-bg-color);
+  }
+
+.radius {
+    border-radius: 5%;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.space-between {
+    justify-content: space-between;
 }
 
 /* HEADER */
@@ -32,7 +98,6 @@ header {
     background-color: var(--primary-blue-color);
     padding: 0 2rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -60,30 +125,23 @@ header nav {
 /* DEMO SECTION */
 .demo-section {
     padding: 3rem 0;
-  }
-
-.container {
-    width: 95%;
-    margin: 0 auto;
-    max-width: 1100px;
-    /* debug */
-    border: 1px solid red;
-  }
+    justify-content: center;
+}
 
   
-  .col {
+ .col {
     /* debug */
     border: 1px solid var(--primary-blue-color);
     min-height: 300px;
     margin-bottom: 1rem;
-  }
+}
 
   #demo .col:first-child {
     /* debug */
     min-height: 500px;
   }
   
-  /* DEMO SECTION - RESPONSIVE - desktop - 768px */
+  /* DEMO SECTION - RESPONSIVE - tablet - 768px */
   @media screen and (min-width: 768px) {
     .row {
       display: flex;
@@ -98,6 +156,36 @@ header nav {
     #demo .col:first-child {
       width: calc(63% - 2rem / 3);
     }
-  
   }
 
+
+  /* STRATEGIC SECTION */
+ .strategic-card {
+    /* debug */
+    min-height: 600px;
+    padding: 2rem;
+ }
+
+ .card-text {
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+
+ .arrow {
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    display: inline-block;
+ }
+
+ /* STRATEGIC SECTION - RESPONSIVE - desktop - 992px */
+@media screen and (min-width: 992px) {
+    .strategic-section {
+        display: flex;
+    }
+
+    #strategic .col {
+        width: calc(50% - 1rem)
+      }
+    
+}

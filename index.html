@@ -13,31 +13,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
     <!-- Header -->
     <header>
-        <div class="header-logo">Logo</div>
-
-        <nav>
-            <ul class="header-menu">
-                <li><a href="">Link</a></li>
-                <li><a href="">Link</a></li>
-                <li><a href="">Link</a></li>
-                <li><a href="">Link</a></li>
-                <li><a href="">Get started</a></li>
-            </ul>
-        </nav>
-        <button class="hamburger-btn">Menu</button>
+        <div class="large-container flex space-between">
+            <div class="header-logo">Logo</div>
+                <nav>
+                    <ul class="header-menu">
+                        <li><a href="">Link</a></li>
+                        <li><a href="">Link</a></li>
+                        <li><a href="">Link</a></li>
+                        <li><a href="">Link</a></li>
+                        <li><a href="">Get started</a></li>
+                    </ul>
+                </nav>
+                <button class="hamburger-btn">Menu</button>
+        </div>
     </header>
     <!-- Header -->
 
     <main>
 
         <!-- Demo section -->
-        <section id="demo" class="demo-section">
+        <section id="demo" class="demo-section flex">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -56,11 +59,39 @@
                         Lorem
                     </div>
                 </div>
-                <!-- /Container -->
             </div>
+            <!-- /Container -->
         </section>
         <!-- /Demo section -->
-        
+
+        <!-- Strategic section -->
+        <section id="strategic" class="strategic-section violet-bg">
+            <div class="large-container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card m-lr-2">
+                            <img src="img/planning1.png" alt="planning image 1">
+                            <h2 class="pb-2">Strategic Planning</h2>
+                            <div class="left-align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi fuga reprehenderit tempore, eligendi beatae expedita? Beatae, obcaecati, nesciunt, nemo quisquam harum deserunt modi assumenda dolorum pariatur sapiente rem eum!</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card white-bg radius strategic-card m-lr-2">
+                            <img src="img/planning2.png" alt="planning image 2">
+                            <div class="card-text flex">
+                                <h3 class="pb-2 center-align">App Development</h3>
+                                <div class="center-align">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel praesentium, nesciunt molestias iste neque aliquam delectus, dicta iure ad atque maxime aspernatur necessitatibus aut provident nemo quae exercitationem voluptatibus dolorum!</div>
+                                <!-- Arrow -->
+                                <a class="arrow violet-bg mt-2" href=""><i class="fa-solid fa-arrow-down" style="color: #000000;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Container -->
+        </section>
+        <!-- /Strategic section -->
+
     </main>
 </body>
 
