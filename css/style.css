@@ -129,7 +129,7 @@ header nav {
 }
 
   
- .col {
+.col {
     /* debug */
     border: 1px solid var(--primary-blue-color);
     min-height: 300px;
@@ -151,11 +151,11 @@ header nav {
     }
   
     #demo .col {
-      width: calc(95% / 3 - 4rem / 3);
+      width: calc(100% / 3 - 4rem / 3);
     }
   
     #demo .col:first-child {
-      width: calc(63% - 2rem / 3);
+      width: calc(68% - 3rem / 2);
     }
   }
 
