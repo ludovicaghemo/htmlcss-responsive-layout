@@ -185,7 +185,16 @@ header nav {
     }
 
     #strategic .col {
-        width: calc(50% - 1rem)
+        width: calc(50% - 1rem);
       }
-    
+}
+
+/* TESTIMONIALS SECTION */
+
+/* TESTIMONIALS SECTION - RESPONSIVE - tablet 768px */
+
+@media screen and (min-width: 768px) {
+    #testimonials .row {
+        display: block;
+    }
 }
