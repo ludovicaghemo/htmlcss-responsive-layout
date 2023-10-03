@@ -238,18 +238,57 @@ header nav {
 /* BENEFITS SECTION */
 
 
+
+
+/* TESTIMONIALS SECTION */
+#testimonials .container .card:first-child {
+    background-color: white;
+    border-radius: 0px;
+    border: 2px solid black;
+}
+
+#testimonials .card {
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+#testimonials .pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content {
+    color: white;
+    text-align: center;
+}
+
+
+/* TESTIMONIALS SECTION - RESPONSIVE - tablet 768px */
+@media screen and (min-width: 768px) {
+    #testimonials .card {
+         display: flex;
+         align-items: center;
+         text-align: center;
+     }
+ 
+ }
+
+
+
 /* BENEFITS SECTION - RESPONSIVE - tablet 768px */
 @media screen and (min-width: 768px) {
-   #benefits .row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-    }
-
-    #benefits .col {
-        width: calc(100% / 2 - 1rem);
-    }
-}
+    #benefits .row {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 2rem;
+     }
+ 
+     #benefits .col {
+         width: calc(100% / 2 - 1rem);
+     }
+ }
 
 /* BENEFITS SECTION - RESPONSIVE - desktop - 992px */
 @media screen and (min-width: 992px) { 
