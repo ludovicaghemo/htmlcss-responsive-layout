@@ -302,22 +302,21 @@ header nav {
  }
 
  /* ABOUT SECTION */
- /* ABOUT SECTION - RESPONSIVE - tablet 768px */
-@media screen and (min-width: 768px) { 
-    #about .row {
-        display: flex;
-        gap: 2 rem;
-    }
 
-    #about .col {
-        width: calc(100% / 2 - 4rem /2);
-    }
-
-    #about .col:first-child {
-        width: calc(60%);
-    }
+.col-left {
+    width: calc(70% - 1rem);
 }
 
+.col-right {
+    width: 30%;
+}
+
+#about .pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 /* CTA SECTION */
 
