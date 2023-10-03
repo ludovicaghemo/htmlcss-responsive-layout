@@ -95,6 +95,10 @@ a {
     background-color: var(--violet-bg-color);
   }
 
+  .white-color {
+    color: white;
+  }
+
 .radius {
     border-radius: 15px;
 }
@@ -126,6 +130,8 @@ a {
     padding: .5rem 1rem;
     display: inline-block;
     align-items: center;
+    left: 45%;
+    top: 100%;
  }
 
  .hamburger-btn {
@@ -255,14 +261,13 @@ header nav {
         left: 2%;
         bottom: 8%;
     }
-
 }
 
   /* STRATEGIC SECTION */
  .strategic-card {
     /* debug */
     min-height: 600px;
-    padding: 2rem;
+    padding: 5rem;
  }
 
  .card-text {
@@ -270,14 +275,13 @@ header nav {
     flex-wrap: wrap;
  }
 
- 
-
-
- /* STRATEGIC SECTION - RESPONSIVE - desktop - 992px */
-
  .row .white-bg {
     background-color: var(--white-bg-color);
  }
+
+ /* STRATEGIC SECTION - RESPONSIVE - desktop - 992px */
+
+
 
 @media screen and (min-width: 992px) {
     #strategic .row {
@@ -286,6 +290,10 @@ header nav {
 
     #strategic .col {
         width: calc(50% - 1rem);
+      }
+
+      .arrow {
+        left: 30%;
       }
 }
 
