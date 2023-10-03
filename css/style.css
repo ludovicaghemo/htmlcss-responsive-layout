@@ -2,6 +2,7 @@
 :root {
     --primary-blue-color: #0084FD;
     --violet-bg-color: #9792E4;
+    --light-blue-color: #B5DDFF;
     --white-bg-color: white;
     --grid-gap: 1rem;
 }
@@ -70,9 +71,13 @@ a {
     margin: 0 2rem;
 } */
 
-/* .pt-2 {
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.pt-2 {
     padding-top: 2rem;
-} */
+}
 
 .pb-2 {
     padding-bottom: 2rem;
@@ -91,7 +96,7 @@ a {
   }
 
 .radius {
-    border-radius: 5%;
+    border-radius: 15px;
 }
 
 .left-align {
@@ -104,6 +109,51 @@ a {
 
 .space-between {
     justify-content: space-between;
+}
+
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+/* BUTTONS */
+.arrow {
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    display: inline-block;
+    align-items: center;
+ }
+
+ .hamburger-btn {
+    background-color: transparent;
+    border: 0;
+    color: inherit;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.get-started {
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    padding: .2rem .3rem;
+    border-radius: 15px;
+}
+
+.app-store {
+    border: 1px solid var(--primary-blue-color);
+    background-color: var(--primary-blue-color);
+    color: white;
+    padding: .3rem 3rem;
+    border-radius: 15px;
+    position: absolute;
+    left: 35%;
+    bottom: 75%;
+    margin-top: 1rem;
 }
 
 /* HEADER */
@@ -134,22 +184,6 @@ header nav {
     gap: var(--grid-gap)
 }
 
-.hamburger-btn {
-    background-color: transparent;
-    border: 0;
-    color: inherit;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.get-started {
-    border: 1px solid white;
-    background-color: white;
-    color: black;
-    padding: .2rem .3rem;
-    border-radius: 15px;
-}
-
 /* HEADER - RESPONSIVE - desktop - 992px */
 @media screen and (min-width: 992px) {
     .header-nav {
@@ -174,6 +208,24 @@ header nav {
 
 /* DEMO SECTION */
 
+#demo .card {
+    background-color: var(--light-blue-color);
+    position: relative;
+}
+
+#demo h2 {
+    color: var(--primary-blue-color);
+    padding: 1rem 0;
+}
+
+.bigger {
+    font-size: 6rem;
+}
+
+.file {
+    text-align: center;
+}
+
  /* DEMO SECTION - RESPONSIVE - tablet - 768px */
 
  @media screen and (min-width: 768px) {
@@ -191,7 +243,20 @@ header nav {
  }
   
  
+/* DEMO SECTION - RESPONSIVE - desktop - 992px */
 
+@media screen and (min-width: 992px) {
+    #demo .card:first-child {
+        display: flex;
+    }
+
+    .app-store {
+        position: absolute;
+        left: 2%;
+        bottom: 8%;
+    }
+
+}
 
   /* STRATEGIC SECTION */
  .strategic-card {
@@ -205,13 +270,7 @@ header nav {
     flex-wrap: wrap;
  }
 
- .arrow {
-    border-radius: 50%;
-    font-size: 2rem;
-    padding: .5rem 1rem;
-    display: inline-block;
-    align-items: center;
- }
+ 
 
 
  /* STRATEGIC SECTION - RESPONSIVE - desktop - 992px */
@@ -229,15 +288,6 @@ header nav {
         width: calc(50% - 1rem);
       }
 }
-
-/* TESTIMONIALS SECTION */
-
-/* TESTIMONIALS SECTION - RESPONSIVE - tablet 768px */
-
-
-/* BENEFITS SECTION */
-
-
 
 
 /* TESTIMONIALS SECTION */
