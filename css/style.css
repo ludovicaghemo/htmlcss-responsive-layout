@@ -23,10 +23,6 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-.flex {
-    display: flex;
-}
-
 a {
     color: inherit;
     text-decoration: inherit;
@@ -50,7 +46,24 @@ a {
     border: 1px solid red;
   }
 
-.mt-2 {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--grid-gap);
+  }
+
+  .main-section {
+    padding: 2rem 0;
+  }
+
+  /* .col {
+    width: 100%;
+    /* debug */
+    border: 1px solid var(--primary-blue-color);
+    background-color: green;
+} */
+
+/* .mt-2 {
     margin-top: 2rem;
 }
 
@@ -68,7 +81,7 @@ a {
 
 .pb-4 {
     padding-bottom: 4rem;
-}
+} */
 
 .white-bg {
     background-color: var(--white-bg-color);
@@ -149,59 +162,36 @@ header nav {
     }
 }
 
+/* MAIN */
+
+.card {
+    width: 100%;
+    padding: 1rem .8rem;
+    /* debug */
+    min-height: 200px;
+    background-color: var(--violet-bg-color);
+    color: black;
+}
+
 /* DEMO SECTION */
-.demo-section {
-    padding: 3rem 0;
-    /* justify-content: space-between; */
-}
 
-  
-.col {
-    /* debug */
-    border: 1px solid var(--primary-blue-color);
-    min-height: 300px;
-    margin-bottom: 1rem;
-    background-color: green;
-}
+ /* DEMO SECTION - RESPONSIVE - tablet - 768px */
 
-  #demo .col:first-child {
-    /* debug */
-    min-height: 500px;
-  }
-  
-  /* DEMO SECTION - RESPONSIVE - tablet - 768px */
-  @media screen and (min-width: 768px) {
-    #demo .row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
+ @media screen and (min-width: 768px) {
+    #demo {
+        --col-width: ((100% / 3) - (2 * var(--grid-gap) / 3));
     }
-  
-    #demo .col {
-      width: calc(100% / 3 - 4rem / 3);
-    }
-  
-    #demo .col:first-child {
-      width: calc(68% - 3rem / 2);
-    }
-  }
 
-  /* DEMO SECTION - RESPONSIVE - desktop - 992px */
-  @media screen and (min-width: 992px) {
-    #demo .row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
+    #demo .card {
+        width: calc(var(--col-width));
     }
-  
-    #demo .col {
-      width: calc(100% / 3 - 4rem / 3);
-    }
-  
-    #demo .col:first-child {
-       width: calc(67% - 1rem);
-    }
+
+  #demo .card:first-child {
+    width: calc(2 * var(--col-width) + var(--grid-gap));
   }
+ }
+  
+ 
 
 
   /* STRATEGIC SECTION */
